@@ -1,0 +1,98 @@
+<!-- explore.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore PGs - StayFinder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .amenity-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Navigation (reused from index.html) -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 18l-8-4V8l8 4 8-4v8l-8 4zm0-10L4 6l8-4 8 4-8 4z"/>
+            </svg>
+            <span class="ml-2 text-xl font-bold text-gray-800">StayFinder</span>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
+          <a href="explore.html" class="text-indigo-600 font-semibold px-3 py-2 text-sm">Explore</a>
+          <a href="howitswork.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">How it Works</a>
+          <a href="about us.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">About Us</a>
+          <a href="signin.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition duration-150">Sign In</a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Explore Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-bold text-gray-800 mb-3">Explore PG Accommodations</h1>
+      <p class="text-gray-600 max-w-xl mx-auto">Browse and compare verified PG options in your preferred area with prices, amenities, and ratings.</p>
+    </div>
+
+    <!-- PG Listings Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Example Card -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 card-hover">
+        <div class="h-48 bg-indigo-100 flex items-center justify-center">
+          <svg class="h-20 w-20 text-indigo-300" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+          </svg>
+        </div>
+        <div class="p-5">
+          <div class="flex justify-between mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Sunshine PG</h3>
+            <p class="text-indigo-600 font-bold">₹10,000/mo</p>
+          </div>
+          <p class="text-sm text-gray-600 mb-3">BTM Layout, Bangalore</p>
+          <div class="flex flex-wrap gap-2 text-xs mb-4">
+            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded">Double Sharing</span>
+            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded">AC</span>
+            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded">WiFi</span>
+          </div>
+          <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded transition duration-150">View Details</button>
+        </div>
+      </div>
+
+      <!-- Duplicate or Loop More Cards as Needed -->
+      <div class="bg-white rounded-lg shadow p-5 text-center text-gray-500 italic col-span-full">
+        More PG cards will be dynamically loaded here...
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: Footer reused from index.html -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+      © 2025 StayFinder. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
