@@ -1,0 +1,95 @@
+<!-- faqs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs - StayFinder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <svg class="h-8 w-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 18l-8-4V8l8 4 8-4v8l-8 4zm0-10L4 6l8-4 8 4-8 4z"/>
+          </svg>
+          <span class="ml-2 text-xl font-bold text-gray-800">StayFinder</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="../index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
+          <a href="explore.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Explore</a>
+          <a href="howitswork.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">How it Works</a>
+          <a href="about-us.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">About Us</a>
+          <a href="signin.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h1>
+
+    <div class="space-y-6">
+      <details class="bg-white p-4 rounded-md shadow group open:ring-2 open:ring-indigo-200 transition">
+        <summary class="cursor-pointer font-semibold text-indigo-600 flex justify-between items-center">
+          How do I book a PG through StayFinder?
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transform transition-transform">▼</span>
+        </summary>
+        <p class="mt-2 text-gray-700">Browse available PGs, apply filters, and click "Book Now" or "Schedule Visit" on the listing page. Our support team will assist you in the next steps.</p>
+      </details>
+
+      <details class="bg-white p-4 rounded-md shadow group open:ring-2 open:ring-indigo-200 transition">
+        <summary class="cursor-pointer font-semibold text-indigo-600 flex justify-between items-center">
+          How do I list my property on StayFinder?
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transform transition-transform">▼</span>
+        </summary>
+        <p class="mt-2 text-gray-700">Go to the "List Property" page, fill out the form with your PG's details, and submit it. Our team will review and publish your listing within 24–48 hours.</p>
+      </details>
+
+      <details class="bg-white p-4 rounded-md shadow group open:ring-2 open:ring-indigo-200 transition">
+        <summary class="cursor-pointer font-semibold text-indigo-600 flex justify-between items-center">
+          Are the PG listings verified?
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transform transition-transform">▼</span>
+        </summary>
+        <p class="mt-2 text-gray-700">Yes, we manually verify every listing via photos, documents, or in-person inspection to ensure authenticity and safety.</p>
+      </details>
+
+      <details class="bg-white p-4 rounded-md shadow group open:ring-2 open:ring-indigo-200 transition">
+        <summary class="cursor-pointer font-semibold text-indigo-600 flex justify-between items-center">
+          Is there any service charge?
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transform transition-transform">▼</span>
+        </summary>
+        <p class="mt-2 text-gray-700">StayFinder does not charge users for browsing. A small convenience fee may apply at the time of booking or for premium support services.</p>
+      </details>
+
+      <details class="bg-white p-4 rounded-md shadow group open:ring-2 open:ring-indigo-200 transition">
+        <summary class="cursor-pointer font-semibold text-indigo-600 flex justify-between items-center">
+          Can I edit my property details later?
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transform transition-transform">▼</span>
+        </summary>
+        <p class="mt-2 text-gray-700">Yes, property owners can log into their dashboard and edit property details anytime. Changes are reviewed before going live.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="text-center text-sm">© 2025 StayFinder. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
